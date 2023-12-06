@@ -4,6 +4,7 @@ const userValidate = require("../Validator/validateUser");
 const userController = require("../controller/userControler");
 
 router.post("/signup", userController.userCreate);
+// router.post("/signin", userController.signup);
 
 // router.post("/signIn", (req, res) => {
 //   console.log("router is ok");
