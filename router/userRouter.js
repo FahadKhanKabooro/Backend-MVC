@@ -4,6 +4,9 @@ const userValidate = require("../Validator/validateUser");
 const userController = require("../controller/userControler");
 
 router.post("/signup", userController.userCreate);
+router.post("/verify-otp", userController.verifyOtp);
+
+router.post("/signin", userController.signup);
 // router.post("/signin", userController.signup);
 
 // router.post("/signIn", (req, res) => {
